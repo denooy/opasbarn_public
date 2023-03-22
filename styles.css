@@ -259,6 +259,7 @@ label {
   color: white;
   background-color: #48251A;
   width: 15%;
+  max-width: 15%;
   height: 35px;
   border-radius: 9px;
   font-size: large;
