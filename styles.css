@@ -258,7 +258,7 @@ label {
 .submit {
   color: white;
   background-color: #48251A;
-  width: 15%;
+  width: 100px;
   height: 35px;
   border-radius: 9px;
   font-size: large;
@@ -362,10 +362,10 @@ label {
       height: auto;
     }
     
-    .submit {
+    /* .submit {
       z-index: 2;
       min-width: 25%;
-    }
+    } */
 
     .middle-images {
       flex-direction: column;     
