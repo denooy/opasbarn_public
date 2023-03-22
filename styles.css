@@ -295,7 +295,7 @@ label {
 		width: 1200px;
 	}
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
+  @media screen and (min-width: 320px) and (max-width: 600px) {
 
     .nav li {
       display: inline-block;
@@ -363,6 +363,7 @@ label {
     }
     
     .submit {
+      z-index: 2;
       min-width: 25%;
     }
 
