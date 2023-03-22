@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opa's Barn</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js" async="false"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+   $('#greeting').delay(1800).fadeIn(1000);  
+});
+    </script>
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+		</script>
+	<script>
+	  $(document).ready(function() {    
+		$("#close").click(function(){
+		  $("#greeting").hide();
+	  });
+	});
+	</script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="main-header">		
+		<ul class="nav">
+				<li class="home"><a href="#home" class="home">Opa's Barn</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>	
+				<li><a href="#classes" class="coming-soon"><span>Classes</span></a></li>		
+		</ul>
+	<!-- <h1><a href="index.html"></a>Opa's Barn</h1> -->
+</header>
+	<div class="bg-text" id="greeting" style="display: none">
+		<div class="close" id="close">X</div>
+	<h1>Welcome to Opa's Barn</h1>
+	
+	<div class="definition">
+	<h3>Opa [ōpa]</h3><p> <i>noun</i></p>
+	<p class="grandfather">&nbsp;&nbsp;&nbsp;&nbsp;1. grandfather, grandpa</p>
+	</div>
+	</div>
+<!--------------------- ABOUT SECTION ---------------------->
+<div class="about-header">
+<div id="about">About</div>
+</div>
+<section class="container">					
+			<div class="row">
+				<section class="left-about">
+					
+					<h1>Randy "Opa" Wineland</h1>
+					
+					<p>Opa's Barn is a newly constructed timber frame barn, filled with a world-class collection of over 2,000 antique woodworking tools nicely displayed throughout the barn.</p>
+					<p>In addition you will also find various antiques for sale to decorate your home, yard, or garden.</p>
+					<p>Classes on the history and use of antique woodworking tools are being planned for the near future. Watch this website, or stop in at Opa's Barn if you are interested in future classes and events scheduled. Opa's Barn is located 1 mile west of Pella, Iowa on Highway G28.</p>						
+				</section>
+				<section class="right-about">
+					<img src="images\barn\IMG_1681.jpeg" alt="" id="about-image">		
+				</section>
+			</div>		
+	</section>
+	<!-- <div class="about-header">
+		<div id="about"></div>
+		</div> -->
+	<div class="middle-images">
+		<img src="images\tools\IMG_4148.jpg" alt="" class="lathe-image">
+		<img src="images\tools\IMG_4152.jpg" alt="" class="lathe-tools-image">
+	</div>
+<!----------------------- CONTACT SECTION ------------------------->
+<div class="about-header">
+	<div id="contact">Contact</div>
+	</div>
+	
+		<section class="container">
+			<div class="row">
+				<section class="left-contact">
+					<img src="images\barn\100_1933.JPG" alt="" id="contact-image">
+					</section>
+				<section class="right-contact">
+					<h2>Send a Message</h2>
+				<p class="contact-message">Randy would love to hear from you! Ask a question, make a comment, or request to stop in for a visit! Guided group tours of the barn are available for up to 20 people.
+				</p>
+				<!-- d89508fc32783a7beb86eb73969a63d5 -->
+				<form action="https://formsubmit.co/d89508fc32783a7beb86eb73969a63d5" method="POST">		
+						<input type="text" name="_honey" style="display:none">	
+						<input type="hidden" name="_captcha" value="false">			
+							<input name="Name" placeholder="&nbsp;&nbsp;Name" type="text" class="name-email" required />
+							<input name="E-mail" placeholder="&nbsp;&nbsp;Email" type="text" class="name-email" required />					
+							<textarea name="Message" placeholder="Message" class="textarea" required></textarea>	<br>					
+							<div class="checkbox"><input type="checkbox" name="Attend-Class" value="No" id="woodworkingclass" onclick="attendClass()"><label>Would like to attend a class on antique woodworking</label></input><br></div>
+							<input type="submit" value="SEND" class="submit"/>
+						<input type="hidden" name="_template" value="box">
+				</form>
+				</section>
+
+
+			</div>
+		</section>
+		<div class="about-header about-header-removed">
+			<div id="about"></div>
+			</div>
+			<div class="middle-images">
+				<img src="images\tools\IMG_2882.jpeg" alt="" class="stair-image">
+				<img src="images\tools\IMG_2884.jpg" alt="" class="plane-tools-image">
+			</div>
+			<div class="about-header">
+				<div id="about"><a href="#top">Return To Top</a></div>
+				</div>
+</body>
+</html>
