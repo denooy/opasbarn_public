@@ -297,6 +297,10 @@ label {
 
   @media screen and (min-width: 320px) and (max-width: 600px) {
 
+    a:hover {
+      color: white;
+    }
+
     .nav li {
       display: inline-block;
       margin: 0;
@@ -362,10 +366,6 @@ label {
       height: auto;
     }
     
-    /* .submit {
-      z-index: 2;
-      min-width: 25%;
-    } */
 
     .middle-images {
       flex-direction: column;     
@@ -379,7 +379,7 @@ label {
 
     .plane-tools-image, .stair-image, .lathe-tools-image, .lathe-image {
       height: auto;
-      object-fit: scale-down;
+      object-fit: cover;
     }
 
 
