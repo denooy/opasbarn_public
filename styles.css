@@ -42,15 +42,7 @@ body, html {
   color: rgba(255, 255, 255, .3)
 }
 
-/* CLASSES COMING SOON */
 
-.coming-soon:hover span {
-  display: none;
-}
-
-.coming-soon:hover:before {
-  content: "Coming Soon!";
-}
   
   .main-header {
     background-image: url("images/barn-entrance.jpg");
@@ -117,14 +109,14 @@ body, html {
   background-color: #48251A;
 }
 
-  #about {
+  /* #about {
     color: white;
     text-align: center;
     font-size: 1rem;
     padding-top: 20px;
     font-weight: lighter;
 
-  }
+  } */
 
 
   .row {
@@ -161,6 +153,7 @@ body, html {
   min-height: 700px;
   background-color: white;
 }
+
 
 .lathe-image {
   width: auto;
@@ -222,13 +215,13 @@ body, html {
   margin: 0 auto -11.5px auto;
 }
 
-#contact {
+/* #contact {
   color: white;
   text-align: center;
   font-size: 1rem;
   padding-top: 20px;
   font-weight: lighter;
-}
+} */
 
 .name-email {
   width: 75%;
@@ -270,6 +263,24 @@ label {
 .submit:hover {
   background-color: #5b382f;
 }
+
+.section-header {
+  background-color: #48251A;
+  height: 65px;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.classes {
+  background-color: white;
+  height: 650px;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  color: black;
+}
 /* ************************FOOTER************************ */
 
 #footer-wrapper {
@@ -295,6 +306,10 @@ label {
 		width: 1200px;
 	}
 
+  #top-return {
+    font-size: medium;
+  }
+
   @media screen and (min-width: 320px) and (max-width: 600px) {
 
     a:hover {
@@ -304,7 +319,7 @@ label {
     .nav li {
       display: inline-block;
       margin: 0;
-      font-size: .75rem;
+      font-size: .85rem;
       padding: .65rem;
        }
        .grandfather {
@@ -382,6 +397,9 @@ label {
       object-fit: cover;
     }
 
+    .section-header {
+      font-size: .85rem;
+    }
 
   }
 
