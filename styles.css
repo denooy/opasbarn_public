@@ -165,7 +165,7 @@ body, html {
 }
 
 .lathe-tools-image {
-  width: auto;
+  width: 100%;
   height: 900px;
   float: right;
   object-fit: cover;
@@ -230,7 +230,7 @@ body, html {
   font-family: inherit;
 }
 
-input, textarea {
+input[type="text"],[type="email"], textarea {
   font-size: large;
   padding-left: 15px;
 }
@@ -328,10 +328,11 @@ label {
       font-size: .85rem;
       padding: .65rem;
        }
-       .grandfather {
-        transform: translateX(-25%);
-        white-space: nowrap;
+
+       .definition {
+        padding-left: 3%;
        }
+
        .home {
         display: none;
          }
