@@ -383,7 +383,8 @@ label {
     
 
     .middle-images {
-      flex-direction: column;     
+      flex-direction: column;
+      min-height: auto;     
     }
 
     .lathe-image, .stair-image {
@@ -396,6 +397,10 @@ label {
       height: auto;
       object-fit: cover;
     }
+
+    /* .plane-tools-image {
+      /* min-height: 375px; */
+    /* } */ 
 
     .section-header {
       font-size: .85rem;
