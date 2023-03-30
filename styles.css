@@ -42,7 +42,9 @@ body, html {
   color: rgba(255, 255, 255, .3)
 }
 
-
+.grandfather {
+  padding-left: 5%;
+}
   
   .main-header {
     background-image: url("images/barn-entrance.jpg");
@@ -330,7 +332,12 @@ label {
        }
 
        .definition {
-        padding-left: 3%;
+        padding-left: 1%;
+       }
+
+       .grandfather {
+        padding-left: 0;
+        white-space: nowrap;
        }
 
        .home {
