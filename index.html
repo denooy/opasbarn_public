@@ -37,7 +37,6 @@
 				<li><a href="#contact">Contact</a></li>	
 				<li><a href="#classes">Classes</a></li>		
 		</ul>
-	<!-- <h1><a href="index.html"></a>Opa's Barn</h1> -->
 </header>
 	<div class="bg-text" id="greeting" style="display: none">
 		<div class="close" id="close">X</div>
@@ -87,11 +86,12 @@
 						<input type="text" name="_honey" style="display:none">	
 						<input type="hidden" name="_captcha" value="false">			
 							<input name="Name" placeholder="Name" type="text" class="name-email" required />
-							<input name="E-mail" placeholder="Email" type="text" class="name-email" required />					
+							<input name="email" placeholder="E-mail" type="email" class="name-email" required />					
 							<textarea name="Message" placeholder="Message" class="textarea" required></textarea>	<br>					
-							<div class="checkbox"><input type="checkbox" name="Attend-Class" value="No" id="woodworkingclass" onclick="attendClass()"><label>Would like to attend a class on antique woodworking</label></input><br></div>
+							<div class="checkbox"><input type="checkbox" name="Attend-Future-Class" value="No" id="woodworkingclass" onclick="attendClass()"><label>Would like to attend a class on antique woodworking</label></input><br></div>
 							<input type="submit" value="SEND" class="submit"/>
 						<input type="hidden" name="_template" value="box">
+						<input type="hidden" name="_subject" value="Message from Opa's Barn">
 				</form>
 				</section>
 
