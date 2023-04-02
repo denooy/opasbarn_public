@@ -33,8 +33,6 @@ body, html {
     font-weight: lighter;
 }
 
-
-
  a:hover {
   color: rgba(255, 255, 255, .3)
 }
@@ -273,23 +271,6 @@ label {
 }
 /* ************************FOOTER************************ */
 
-#footer-wrapper {
-  -webkit-transform: translate3d(0, 0, 0);
-  position: relative;
-  border-top: solid 1px #c2c7cc;
-  padding: 6em 0 6em 0;
-  background-image: url("images/overlay.png"), url("images/footer.svg");
-  background-size: 128px 128px,				100% 100%;
-}
-
-#footer {
-  position: relative;
-  z-index: 1;
-}
-
-  #footer header.major {
-    margin-bottom: 3em;
-  }
   .container {
 		margin: 0 auto;
 		max-width: 100%;
