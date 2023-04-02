@@ -144,39 +144,43 @@ body, html {
 
 
 .lathe-image {
-  width: auto;
+  width: 100%;
+  min-width: 25%;
   height: 900px;
   float: left;
   border-right: 15px solid #48251A;
   object-fit: cover;
   object-position: center;
+
 }
 
 .lathe-tools-image {
+  width: 50%;
+  height: 900px;
+  float: right;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.stair-image {
+  width: 100%;
+  height: 900px;
+  float: left;
+  border-right: 15px solid #48251A;
+  object-fit: cover;
+  object-position: right;
+  overflow: hidden;
+}
+
+.plane-tools-image {
   width: 100%;
   height: 900px;
   float: right;
   object-fit: cover;
-  object-position: center;
-}
+  object-position: left;
+  overflow: hidden;
 
-.stair-image {
-  width: auto;
-  height: 900px;
-  max-width: 100%;
-  float: left;
-  border-right: 15px solid #48251A;
-  object-fit: cover;
-  object-position: right;
-}
-
-.plane-tools-image {
-  width: auto;
-  height: 900px;
-  max-width: 100%;
-  float: right;
-  object-fit: cover;
-  object-position: right;
 }
 
 /* CONTACT SECTION */
@@ -253,7 +257,7 @@ label {
 .section-header {
   background-color: #48251A;
   height: 65px;
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-items: center;
   color: white;
@@ -262,7 +266,7 @@ label {
 .classes {
   background-color: white;
   height: 650px;
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-items: center;
   color: black;
@@ -376,7 +380,8 @@ label {
 
     .middle-images {
       flex-direction: column;
-      min-height: auto;     
+      min-height: auto; 
+      max-width: 100vw;    
     }
 
     .lathe-image, .stair-image {
@@ -388,6 +393,10 @@ label {
     .plane-tools-image, .stair-image, .lathe-tools-image, .lathe-image {
       height: auto;
       object-fit: cover;
+    }
+
+    .lathe-tools-image {
+      width: 100%;
     }
 
     .section-header {
