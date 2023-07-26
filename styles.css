@@ -10,6 +10,7 @@ body, html {
     font-size: 24px;
     scroll-behavior: smooth;
   }
+
 /* ANNOUNCEMENT BANNER STYLES */
   /* div#banner { 
     display: flex; 
@@ -80,7 +81,7 @@ body, html {
     font-weight: lighter;
 }
 
- a:hover {
+ a:hover:not(.icon) {
   color: rgba(255, 255, 255, .3)
 }
 
@@ -173,13 +174,14 @@ li {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  border-radius: 5px;
 }
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #48251A;
   color: white;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover:not(.icon) {
   /* background-color: #ddd; */
   color: gray;
 }
@@ -294,6 +296,10 @@ li {
 
   .dropdown-content {
     padding-left: 15px;
+  }
+
+  .homebutton {
+    text-align: center;
   }
 }
 
@@ -462,6 +468,11 @@ li {
   max-height: 700px;
 }
 
+.hours {
+  margin-top: 10%;
+  padding-right: 5%;
+}
+
 .right-contact {
   width: 50%;
   float: right;
@@ -469,9 +480,9 @@ li {
 }
 
 #contact-image {
-  max-width: 500px;
-  max-height: 700px;
-  margin: 0 auto -11.5px auto;
+  max-width: 400px;
+  max-height: 500px;
+  margin: 0 auto;
 }
 
 .name-email {
@@ -682,9 +693,12 @@ label:not(.woodclass) {
     /********************* GALLERY PAGE *********************/
 
   .gallery {
-    padding-left: 65px;
-    padding-right: 60px;
-    /* transform: translateY(-25px); */
+    /* transform: translateY(-15px); */
+  }
+
+  .gallery-header {
+    font-size: 16px;
+    background-color: #6E5E44;
   }
 
   .imagerow {
@@ -775,6 +789,19 @@ label:not(.woodclass) {
       width: 100%;
       max-height: 500px;
     }
+ 
+    .open-sign {
+      display: grid;
+      max-height: auto;
+    }
+
+    .open-barn {
+      width: 85%;
+      max-width: 400px;
+      max-height: 400px;
+      height: auto;
+
+    }
       #articlemobile {
         display: block;
       }
@@ -794,6 +821,10 @@ label:not(.woodclass) {
       text-align: center;
     }
 
+    .hours {
+      margin-top: 15%;
+    }
+
     .right-contact {
       width: 100%;
       float: none;
@@ -811,6 +842,10 @@ label:not(.woodclass) {
       max-width: 85%;
       text-align: justify;
       margin-top: -5px;
+    }
+
+    .hours-paragraph {
+      margin-bottom: 50px;
     }
 
     .animation {
@@ -834,7 +869,7 @@ label:not(.woodclass) {
       display: none;
     }
 
-    img {
+    img:not(.open-barn) {
       max-width: 100%;
       height: auto;
     }

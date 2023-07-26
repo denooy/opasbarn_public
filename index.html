@@ -17,22 +17,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script defer src="script.js" async="false"></script>	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script>
+	<!-----------HOMEPAGE GREETING------------>
+    <!-- <script>
       $(document).ready(function() {
    $('#greeting').delay(1800).fadeIn(1000);  
 });
-    </script>
+    </script> -->
 	<script src=
 	"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
 		</script>
-	<script>
+	<!-----------HOMEPAGE GREETING------------>
+	<!-- <script>
 	  $(document).ready(function() {    
 		$("#close").click(function(){
 		  $("#greeting").hide();
 	  });
 	});
-	</script>
-	<script>
+	</script> -->
+	<!-- <script>
 		function myFunction() {
 		  var x = document.getElementById("myNavbar");
 		  if (x.className === "navbar") {
@@ -50,7 +52,7 @@
 			}
 		  }  
 		  document.querySelector("a").addEventListener("click", toggleDisplay);
-		  </script>
+		  </script> -->
 <!-- 
 <script>
 	function scrollFunction() {
@@ -91,47 +93,39 @@
 	  </div> -->
 	<!-- Header -->
 	<header class="main-header">
-		<!-- <div class="header-wrapper"> -->
-		  <nav class="navbar" id="myNavbar">
-			  <!-- <div class="container"> -->
-			   
+		  <nav class="navbar" id="myNavbar">	   
 				<ul class="navbar-nav">
 				  <li class="nav-item">
 					  <a class="nav-link" href="#about">About</a>
 					</li> 
 				  <li class="nav-item dropdown">
-					  <a class="dropbtn" href="#contact" id="dropdownMenuLink" data-toggle="dropdown">Contact
+					  <a class="dropbtn" href="contact.html" id="dropdownMenuLink" data-toggle="dropdown">Contact
 						  <i class="fa fa-caret-down"></i>
-						  <!-- <i class="fa fa-chevron-down"></i> -->
 					  </a>            
 					  <div class="dropdown-content">
-						<a class="dropdown-item" href="#hours">Hours</a>
-						<a class="dropdown-item" href="#sendmessage">Send Message</a>
-						<a class="dropdown-item" href="#visitpella">Visit Pella</a>
+						<a class="dropdown-item" href="contact.html">Hours</a>
+						<a class="dropdown-item" href="#contact">Send Message</a>
+						<a class="dropdown-item" href="https://www.visitpella.com/">Visit Pella</a>
 					  </div>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#gallery">Gallery</a>
+					<a class="nav-link" href="gallery.html">Gallery</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="#classes">Classes</a>
 				  </li>            
 				  <li class="nav-item">
-					<a class="nav-link" href="#news">News</a>
+					<a class="nav-link" href="news.html">News</a>
 				  </li>  
 				  <a href="javascript:void(0);" class="icon" onclick="myFunction(); toggleDisplay(); changeStyle();">
 					<i class="fa fa-bars"></i>
 				  </a>          
 				</ul>
-			  <!-- </div> -->
-			 </nav>
-				   <!-- <div class="thumbnail-div">					 -->
-					  <a href="https://www.opasbarn.com"><img src="images/barn-sign.jpg"  alt="Sign stating the name Opa's Barn" class="thumbnail-image" id="myImage"></a>			
-				   <!-- </div> -->
-		  <!-- </div> -->
+			 </nav>			
+				<a href="index.html" class="homebutton"><img src="images/barn-sign.jpg"  alt="Sign stating the name Opa's Barn" class="thumbnail-image" id="myImage"></a>		
 		</header>
-
-	<div class="bg-text" id="greeting" style="display: none">
+<!-----------HOMEPAGE GREETING------------>
+	<!-- <div class="bg-text" id="greeting" style="display: none">
 		<div class="close" id="close">X</div>
 	<h1><span>Welcome to</span> Opa's Barn</h1>
 	
@@ -139,7 +133,7 @@
 	<h3>Opa [ōpa]</h3><p> <i>noun</i></p>
 	<p class="grandfather">1. grandfather, grandpa</p>
 	</div>
-	</div>
+	</div> -->
 <!--------------------- ABOUT SECTION ---------------------->
 <div class="section-header" id="about">About</div>
 <section class="container">					
@@ -153,7 +147,7 @@
 					<p class="contact-message">Classes on the history and use of antique woodworking tools are being planned for the near future. Watch this website, or stop in at Opa's Barn if you are interested in future classes and events scheduled. Opa's Barn is located 1 mile west of Pella, Iowa on Highway G28.</p>						
 				</section>
 				<section class="right-about">
-					<img src="images\barn\IMG_1681.jpeg" alt="" id="about-image">		
+					<img src="images\barn\IMG_1681.jpg" alt="" id="about-image">		
 				</section>
 			</div>		
 	</section>
@@ -208,7 +202,7 @@
 		<div class="section-header about-header about-header-removed"></div>
 		
 			<div class="middle-images">
-				<img src="images\tools\IMG_2882.jpeg" alt="" class="stair-image">
+				<img src="images\tools\IMG_2882.jpg" alt="" class="stair-image">
 				<img src="images\tools\IMG_2884.jpg" alt="" class="plane-tools-image">
 			</div>
 			<div class="section-header about-header" id="classes">Classes</div>
