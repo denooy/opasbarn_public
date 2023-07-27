@@ -81,7 +81,7 @@ body, html {
     font-weight: lighter;
 }
 
- a:hover:not(.icon) {
+ a:hover {
   color: rgba(255, 255, 255, .3)
 }
 
@@ -181,7 +181,7 @@ li {
   color: white;
 }
 
-.dropdown-content a:hover:not(.icon) {
+.dropdown-content a {
   /* background-color: #ddd; */
   color: gray;
 }
