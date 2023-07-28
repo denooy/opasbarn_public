@@ -696,6 +696,14 @@ label:not(.woodclass) {
     height: 2.5rem;            /* Footer height */
   }
 
+  
+  @media screen and (min-height: 100px) and (max-height: 885px) {
+
+  #footer {
+    position: relative;
+  }
+}
+
   /********************* NEWS PAGE *********************/
 
   #article-image {
@@ -819,19 +827,23 @@ label:not(.woodclass) {
     .open-sign {
       display: grid;
       max-height: auto;
+      overflow: hidden;
     }
 
     .open-barn {
-      height: 100%;
+      height: auto;
       max-height: 425px;
-      /* width: 85%; */
+      display: block;
+      width: 85%;
       margin: 0 auto;
+      overflow: hidden;
     }
 
     #open-image {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
+      width: 400px;
+      height: 650px;
+      overflow: hidden;
+
     }
 
     #article-image {
@@ -859,7 +871,7 @@ label:not(.woodclass) {
     }
 
     .hours {
-      margin-top: 15%;
+      margin-top: -15%;
     }
 
     .right-contact {
@@ -935,7 +947,7 @@ label:not(.woodclass) {
     }
 
     .section-header {
-      font-size: .85rem;
+      font-size: 16px;
     }
 
   }
