@@ -17,4 +17,12 @@ function attendClass() {
       listItem.style.display = listItem.style.display === "block" ? "none" : "block";
     }
     }  
-    document.querySelector("a").addEventListener("click", toggleDisplay);
+    $(document).ready(function() {
+      $("#myImage").click(function() {
+        $(this).hide();
+      });
+      $("#myAnchor").click(function() {
+        $("#myImage").toggle();
+      });
+    });
+    // document.querySelector("a").addEventListener("click", toggleDisplay);
