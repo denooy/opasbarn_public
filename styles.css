@@ -315,13 +315,16 @@ li {
   .main-header {
     background-image: url("images/barn-entrance.jpg");
     width: 100%;
-    height: 100%;  
+    height: 100vh;  
     margin-right: auto;
     margin-left: auto; 
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
   
   .bg-text {
