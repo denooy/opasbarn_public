@@ -74,7 +74,7 @@ body, html {
     padding: .65rem;
      }
 
-  a {
+  a:not(.homebutton,.request-form) {
     padding: .5em;
     color: white;
     text-decoration: none;
@@ -83,6 +83,11 @@ body, html {
 
  a:hover {
   color: rgba(255, 255, 255, .3)
+}
+
+.request-form {
+  color: maroon;
+
 }
 
 .header-wrapper {
@@ -185,6 +190,8 @@ li {
   background-color: #48251A;
   color: white;
 }
+
+
 
 /* .dropdown-content a {
    background-color: #ddd; 
@@ -303,9 +310,7 @@ li {
     padding-left: 15px;
   }
 
-  .homebutton {
-    text-align: center;
-  }
+
 }
 
 .grandfather {
@@ -757,6 +762,10 @@ label:not(.woodclass) {
     border-right: 8px solid #48251A;
   } */
 
+  .request-form:hover {
+    color: blue;
+  }
+
 
 
   @media screen and (min-width: 320px) and (max-width: 850px) {
@@ -765,20 +774,54 @@ label:not(.woodclass) {
       color: white;
     }
 
+    .request-form:hover {
+      color: black;
+    }
+
     .header-wrapper {
       position: relative;
     }
 
       .thumbnail-image {
-        /* position: absolute;
-        top: 0; */
+        /* position: absolute; */
+        /* top: 0; */
         display: flex;
         justify-content: center;
         /* left: 38%; */
         z-index: 3;
         margin-left: auto;
         margin-right: auto;
-        transform: translateY(-79px);       
+        max-width: 125px;
+        max-height: 125px; 
+        transform: translateY(-50px);       
+    }
+
+    .gallery-thumbnail {
+        position: absolute;
+        top: 0;
+        /* display: flex;
+        justify-content: center; */
+        left: 38%;
+        z-index: 3;
+        /* margin-left: auto;
+        margin-right: auto; */
+        max-width: 125px;
+        max-height: 125px; 
+        transform: translateY(1px);  
+    }
+
+    .last-dropdown {
+      margin-bottom: -12px;
+    }
+
+    .homebutton {
+      width: 0px;
+      max-height: 0px;
+      font-size: 0%;
+    }
+
+    .gallery {
+      /* transform: translateY(-90px); */
     }
     
     .nav li {
@@ -874,7 +917,7 @@ label:not(.woodclass) {
     }
 
     .hours {
-      margin-top: -15%;
+      margin-top: -5%;
     }
 
     .right-contact {
@@ -952,7 +995,6 @@ label:not(.woodclass) {
     .section-header {
       font-size: 16px;
     }
-
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1350px) {
